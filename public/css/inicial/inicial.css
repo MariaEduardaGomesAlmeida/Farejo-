@@ -1,0 +1,1087 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titan+One&display=swap");
+
+
+
+* { 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+    
+body { 
+    background: #fff; 
+    color: #333; 
+    scroll-behavior: smooth; 
+}
+
+
+
+/* Navbar */
+header {
+    background: #AF620B;
+    background: linear-gradient(90deg,rgba(175, 98, 11, 1) 2%, rgba(214, 135, 46, 1) 41%, rgba(140, 77, 7, 1) 100%);
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 12px 40px; 
+    top: 0; 
+    height: 80px;
+    z-index: 10;
+    font-family: 'Oswald', sans-serif;
+}
+    
+.logo { 
+   width: 190px;
+}
+
+nav a { 
+    margin: 0 12px; 
+    color: white; 
+    text-decoration: none; 
+    font-size: 20px;
+}
+
+
+nav a:hover {
+     color: #903500;
+}
+    
+nav a.active {
+    color: #903500;
+    font-weight: bold;
+}
+
+.btnLogin { 
+    border-radius: 50%;
+    width: 40px;
+    background-color: transparent;
+    height: 40px;
+    background-image: url(/);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border: transparent;
+}
+
+.btnLogin:hover { 
+    background: #903500; 
+    transform: scale(1.05); 
+}
+
+.navbar,
+.navbar * {
+  position: relative;
+  z-index: 9999;
+}
+
+
+
+
+
+/*Banner*/
+
+.slider {
+  width: 100%;
+  overflow: hidden; 
+  position: relative;
+}
+
+
+.slidesBanner{
+    width: 400%;
+    height: 520px;
+    display: flex;
+}
+
+.slidesBanner input{
+    display: none;
+} 
+
+.slideBanner{
+    width: 25%;
+    height: 100%;
+    
+}
+
+.slideBanner img {
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.manual-navigation{
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+
+.manual-btn{
+    /* border: 2px solid #fff; */
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background-color: #fff;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -75%;
+}
+
+.navigation-auto div{
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+    
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div:not(:last-child){
+    margin-right: 40px;
+}
+
+
+
+
+
+/* Botões Iniciais */
+.botoesIniciais { 
+    display: flex; 
+    justify-content: center; 
+    gap: 100px; 
+    margin: 20px 0; 
+}
+
+.botoesIniciais a {
+    background: #903500; 
+    color: #fff; 
+    display: flex;              
+    justify-content: center;    
+    align-items: center;        
+    width: 450px;
+    font-family: 'Titan One';
+    padding: 15px 30px; 
+    border-radius: 10px;
+    text-decoration: none; 
+    transition: 0.3s;
+    font-size: 30px;
+}
+
+
+.botoesIniciais a:hover { 
+    background: #903500; 
+    transform: scale(1.05); 
+}
+
+
+
+
+
+ /* Seção objetivos*/
+ .secaoObjetivo {
+  padding: 20px;
+  margin: 170px;
+}
+
+.cardsObjetivos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+}
+
+.cardObjetivo img {
+  width: 50%;       
+  max-width: 300px;  
+  height: auto;
+  display: block;
+  margin: 0 auto;    
+}
+
+.cardObjetivo h3{
+    color:#903500;
+    font-family: 'Titan One';
+    font-size: 38px;
+}
+
+.cardObjetivo p{
+    font-family: 'Oswald';
+    font-size: 20px;
+}
+
+
+
+
+
+/*Secao impactos*/
+.secaoImpactos {
+  background: #f5e1c8; 
+  border: 2px solid #903500;
+  border-radius: 12px;
+  padding: 30px;
+  text-align: center;
+  max-width: 1000px;
+  margin: 40px auto;
+  position: relative;
+}
+
+.tituloImpacto {
+  display: inline-block;
+  background: #fff;
+  color: #903500;
+  font-size: 2.5rem;
+  font-family: 'Titan One';
+  padding: 6px 20px;
+  border-radius: 8px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.subtituloImpacto {
+  font-size: 2.3rem;
+  margin: 40px 0 30px;
+  color: #222;
+  font-family: 'Oswald';
+}
+
+.cardsImpactos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.cardImpacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon-numero {
+  display: flex;
+  align-items: center;   
+  gap: 8px;              
+}
+
+.cardImpacto img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cardImpacto .numeroImpacto {
+  font-size: 2.5rem;
+  font-family: 'Titan One';
+  color: #903500;
+}
+
+.cardImpacto span {
+  font-size: 1.25rem;
+  color: #222;
+  font-family: 'Oswald';
+}
+
+
+
+
+
+/* Secao Pets */
+.secaoPets {
+  text-align: center;
+  padding: 30px 20px;
+  font-family: 'Oswald';
+}
+
+.secaoPets h2 {
+  font-size: 32px;
+  font-family: 'Titan One';
+  color: #903500;
+  margin-bottom: 30px;
+}
+
+.cardsPets {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.cardPet {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 240px;
+  position: relative;
+}
+
+.cardPet img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  border-radius: 20px;
+  margin-bottom: -25px; 
+  z-index: 1;
+} 
+
+.osso{
+    width: 300px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #E2AC7F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute; 
+    bottom: -25px;      
+    border: 4px solid #903500;  
+    z-index: 2;          
+}
+.osso p{
+    color: #663e17;
+    font-size: 25px;
+}
+
+
+
+
+
+/* Seção Eventos*/
+.secaoEventos {
+  padding: 20px 40px;
+  font-family: 'Oswald';
+}
+
+.secaoEventos h1 {
+  font-size: 32px;
+  font-family: 'Titan One';
+  font-weight: 900;
+  color: #903500;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+
+.divEventos {
+  display: flex;
+  gap: 30px;
+}
+
+.eventoDestaque {
+  width: 55%;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.eventoDestaque img {
+  width: 80%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.eventoDestaque ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px;
+}
+
+.dataEvento .numero{
+  font-size: 34px;
+  font-family: 'Titan One';
+  text-align: center;
+  color: #903500;
+}
+
+.dataEvento .mes{
+  font-size: 22px;
+  font-family: 'Titan One';
+  color: #903500;
+} 
+
+.eventos {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.eventos ul {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  margin: 0;
+}
+
+.eventos ul li img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.titEvento {
+  font-size: 25px;
+  font-family: 'Titan One';
+  color: #903500;
+  margin-bottom: 5px;
+}
+
+.endereco {
+  font-size: 21px;
+  font-family: 'Owald';
+  margin: 2px 0;
+}
+
+.nomeOng {
+  font-size: 16px;
+  font-family: 'Oswald';
+  margin: 5px 0 10px;
+}
+
+.eventos ul ul {
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.eventos .numero {
+  font-size: 37px;
+  font-family: 'Titan One';
+  color: #903500;
+  margin: 0;
+  text-align: center;
+}
+
+.eventos .mes {
+  font-size: 25px;
+  font-family: 'Titan One';
+  color: #903500;
+  text-transform: uppercase;
+  margin: 0;
+  text-align: center;
+}
+
+.eventos ul ul li:last-child p {
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.eventos ul .contEvento ul .txtEvento p{
+  font-size: 17px;
+}
+
+.eventoDestaque p{
+  font-size: 17px;
+}
+
+.eventoDestaque .endereco{
+  font-size: 21px;
+}
+
+
+
+/* Secao Hospitais */
+.secaoHospitais {
+  background: #AF620B;
+  background: linear-gradient(90deg,rgba(175, 98, 11, 1) 2%, rgba(214, 135, 46, 1) 41%, rgba(140, 77, 7, 1) 100%);
+  padding: 40px 20px;
+  font-family: 'Oswald';
+  color: #663e17;
+}
+
+.secaoHospitais h2 {
+  font-size: 32px;
+  font-family: 'Titan One';
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.conteudoHospitais {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.buscaHospitais {
+  flex: 1;
+  min-width: 200px;
+}
+
+.buscaHospitais label {
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.buscaHospitais input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid #888;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.cardHospital {
+  background: #fcece0;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
+}
+
+.cardHospital h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.cardHospital p {
+  font-size: 18px;
+  margin: 4px 0;
+}
+
+.cardHospital a {
+  display: inline-block;
+  margin-top: 5px;
+  padding: 6px 10px;
+  background: #903500;
+  color: white;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.cardHospital a:hover {
+  transform: scale(1.05); 
+}
+
+.mapaHospitais {
+  flex: 1;
+  min-width: 350px;
+}
+
+
+
+
+
+/* Secao Cuidados */
+.secaoCuidados {
+  font-family: 'Oswald';
+  text-align: center;
+  padding: 40px 20px;
+  color: #663e17;
+}
+
+.secaoCuidados h1 {
+  font-size: 32px;
+  font-weight: 900;
+  font-family: 'Titan One';
+  text-transform: uppercase;
+  color: #903500;
+  margin-bottom: 30px;
+}
+
+.cardsCuidados {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  position: relative;
+  width: 520px;
+  background: linear-gradient(180deg, #f7c392, #c65c1a);
+  border-radius: 15px;
+  padding: 25px;
+  text-align: left;
+  color: #4b2a06;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.card h2 {
+  font-size: 25px;
+  font-family: 'Titan One';
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 20px;
+  line-height: 1.4;
+  font-family: 'Oswald';
+  margin-bottom: 40px;
+}
+
+.btnCard {
+  background: #663e17;
+  color: #E2AC7F;
+  font-family: 'Titan One';
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.btnCard:hover {
+  background: #75481b;
+}
+
+.card img {
+  position: absolute;
+  bottom: 0;
+  right: -20px;
+  width: 180px;
+}
+
+
+
+
+
+/* Secao Comentarios */
+.secaoComentarios{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 40px 60px;
+  font-family: 'Oswald';
+}
+
+.textoDepo h2 {
+  font-size: 40px;
+  color: #903500;
+  font-family: 'Titan One';
+}
+
+.carrossel {
+  position: relative;
+  width: 600px;
+  padding: 20px 50px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0px 3px 10px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  display: none;
+}
+
+.slide.ativo {
+  display: block;
+}
+
+.perfil {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.perfil img {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+.perfil h3 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.estrela {
+  font-size: 14px;
+  color: #d79c00;
+  margin: 0;
+}
+
+.comentario {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #333;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: #903500;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.indicadores {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.dot {
+  height: 8px;
+  width: 8px;
+  margin: 0 4px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.dot.ativo {
+  background-color: #903500;
+  width: 20px;
+  border-radius: 10px;
+}
+
+
+
+
+
+/* Footer */
+.footer {
+  background: #AF620B;
+  background: linear-gradient(90deg,rgba(175, 98, 11, 1) 2%, rgba(214, 135, 46, 1) 41%, rgba(140, 77, 7, 1) 100%);
+  color: #663e17; 
+  font-family: 'Oswald';
+  padding: 30px 50px 10px;
+}
+
+.footerContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.footerLogo img {
+  width: 200px;
+  height: auto;
+}
+
+.footerLinks h3,
+.footerContato h3 {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  color: #903500;
+}
+
+.footerLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li {
+  margin-bottom: 4px;
+}
+
+.footerLinks a {
+  text-decoration: none;
+  color: #663e17;
+  font-size: 18px;
+}
+
+.footerLinks a:hover {
+  text-decoration: underline;
+}
+
+.footerContato p {
+  margin: 4px 0;
+  font-size: 17px;
+}
+
+.footerCopy {
+  text-align: center;
+}
+
+.footerCopy hr {
+  border: none;
+  border-top: 1px solid #663e17;
+  margin-bottom: 5px;
+}
+
+.footerCopy p {
+  font-size: 13px;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Responsividade */
+
+.menu-toggle {
+  display: none;
+  font-size: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 220px;
+    background: #E2AC7F;
+    padding: 20px;
+    border-radius: 0 0 0 12px;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+
+  .btnLogin {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.ativo {
+    display: flex;
+  }
+}
+
+/* Responsividade */
+@media (max-width: 900px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 220px;
+    background: #E2AC7F;
+    padding: 20px;
+    border-radius: 0 0 0 12px;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+
+  .btnLogin {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.ativo {
+    display: flex;
+  }
+
+  .botoesIniciais {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .botoesIniciais a {
+    width: 100%;
+    font-size: 22px;
+  }
+
+  .cardsObjetivos {
+    grid-template-columns: 1fr;
+    margin: 50px 0;
+  }
+
+  .cardsImpactos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .divEventos {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .eventoDestaque{
+    width: 100%;
+  }
+
+  .eventos{
+    width: 100%;
+  }
+
+  .conteudoHospitais {
+    flex-direction: column;
+  }
+
+  .secaoComentarios {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .secaoObjetivo{
+    width: 90%;
+    padding: 0;
+    margin: 50px;
+  }
+  
+}
+
+/* Comentarios */
+@media (max-width: 600px) {
+  .secaoComentarios {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .textoDepo h2 {
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .carrossel {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .perfil {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .perfil img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .perfil h3 {
+    font-size: 14px;
+  }
+
+  .estrela {
+    font-size: 12px;
+  }
+
+  .comentario {
+    font-size: 13px;
+  }
+
+  .prev,
+  .next {
+    font-size: 20px;
+    top: 90%;
+    transform: translateY(-50%);
+  }
+
+  .indicadores {
+    margin-top: 15px;
+  }
+}
+
+
+
+/* Menu */
+@media (max-width: 900px) {
+  header {
+    padding: 12px 20px;
+  }
+
+  nav {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 220px;
+    background: #E2AC7F;
+    padding: 20px;
+    border-radius: 0 0 0 12px;
+  }
+
+  nav a {
+    margin: 12px 0;
+    font-size: 18px;
+  }
+
+  .btnLogin {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav.ativo {
+    display: flex;
+  }
+}
+
+
